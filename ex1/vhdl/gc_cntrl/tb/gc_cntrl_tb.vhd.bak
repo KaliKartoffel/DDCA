@@ -1,0 +1,42 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.math_real.all; -- for random number generation
+
+use work.gc_cntrl_pkg.all;
+
+
+entity gc_cntrl_tb is
+end entity;
+
+architecture tb of gc_cntrl_tb is
+begin
+	random_vector_generator_demo : process
+		variable seed1, seed2 : integer := 123456789; --use your matriculation number
+		impure function rand_slv(slv_len : integer) return std_logic_vector is
+			variable r : real;
+			variable slv : std_logic_vector(slv_len - 1 downto 0);
+		begin
+			for i in 0 to slv_len-1 loop
+				uniform(seed1, seed2, r);
+				slv(i) := '1';
+				if r > 0.5 then slv(i) := '0'; end if;
+			end loop;
+			return slv;
+		end function;
+	begin
+		report "some random vectors:";
+		report to_hstring(rand_slv(64));
+		report to_hstring(rand_slv(64));
+		report to_hstring(rand_slv(64));
+		report to_hstring(rand_slv(64));
+		
+		report "some random gc_cntrl_state_t values:";
+		report to_string(to_gc_cntrl_state(rand_slv(64)));
+		report to_string(to_gc_cntrl_state(rand_slv(64)));
+		report to_string(to_gc_cntrl_state(rand_slv(64)));
+		report to_string(to_gc_cntrl_state(rand_slv(64)));
+		wait;
+	end process;
+
+end architecture;

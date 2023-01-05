@@ -1,0 +1,117 @@
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+Start time: 23:56:27 on Apr 07,2022
+vcom -2008 -work work -suppress 1236 ../math/src/math_pkg.vhd 
+-- Loading package STANDARD
+-- Compiling package math_pkg
+-- Compiling package body math_pkg
+-- Loading package math_pkg
+End time: 23:56:27 on Apr 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+Start time: 23:56:27 on Apr 07,2022
+vcom -2008 -work work -suppress 1236 ../gfx_util/src/gfx_util_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package gfx_util_pkg
+End time: 23:56:27 on Apr 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+Start time: 23:56:27 on Apr 07,2022
+vcom -2008 -work work -suppress 1236 ../vga_gfx_cntrl/src/bb_rom_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package gfx_util_pkg
+-- Compiling package bb_rom_pkg
+End time: 23:56:27 on Apr 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+Start time: 23:56:27 on Apr 07,2022
+vcom -2008 -work work -suppress 1236 ../vga_gfx_cntrl/src/vga_gfx_cntrl_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package vga_gfx_cntrl_pkg
+-- Compiling package body vga_gfx_cntrl_pkg
+-- Loading package vga_gfx_cntrl_pkg
+End time: 23:56:27 on Apr 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+Start time: 23:56:27 on Apr 07,2022
+vcom -2008 -work work -suppress 1236 ./tb/image_buffer_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package image_buffer_pkg
+-- Compiling package body image_buffer_pkg
+-- Loading package image_buffer_pkg
+End time: 23:56:27 on Apr 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+Start time: 23:56:27 on Apr 07,2022
+vcom -2008 -work work -suppress 1236 ./tb/gfx_instr_interpreter.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package std_logic_textio
+-- Loading package gfx_util_pkg
+-- Loading package vga_gfx_cntrl_pkg
+-- Loading package bb_rom_pkg
+-- Loading package image_buffer_pkg
+-- Loading package math_pkg
+-- Compiling entity gfx_instr_interpreter
+-- Compiling architecture arch of gfx_instr_interpreter
+End time: 23:56:27 on Apr 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+Start time: 23:56:28 on Apr 07,2022
+vcom -2008 -work work -suppress 1236 ./src/decimal_printer_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package vga_gfx_cntrl_pkg
+-- Compiling package decimal_printer_pkg
+End time: 23:56:28 on Apr 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+Start time: 23:56:28 on Apr 07,2022
+vcom -2008 -work work -suppress 1236 ./src/decimal_printer.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package vga_gfx_cntrl_pkg
+-- Loading package math_pkg
+-- Compiling entity decimal_printer
+-- Compiling architecture arch of decimal_printer
+End time: 23:56:28 on Apr 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+Start time: 23:56:28 on Apr 07,2022
+vcom -2008 -work work -suppress 1236 ./tb/decimal_printer_tb.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package vga_gfx_cntrl_pkg
+-- Loading package gfx_util_pkg
+-- Loading package bb_rom_pkg
+-- Loading package decimal_printer_pkg
+-- Compiling entity decimal_printer_tb
+-- Compiling architecture bench of decimal_printer_tb
+-- Loading package MATH_REAL
+-- Loading package std_logic_textio
+-- Loading package image_buffer_pkg
+-- Loading package math_pkg
+-- Loading entity gfx_instr_interpreter
+End time: 23:56:28 on Apr 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

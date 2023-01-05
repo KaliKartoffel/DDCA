@@ -1,0 +1,1278 @@
+# //  Questa Sim
+# //  Version 10.6c_1 linux Sep 15 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim gc_cntrl_tb -t 1ps -msgmode both
+# vsim gc_cntrl_tb -t 1ps -msgmode both 
+# Start time: 21:48:29 on Apr 07,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.sync_pkg
+# Loading work.gc_cntrl_pkg(body)
+# Loading work.gc_cntrl_tb(tb)#1
+#  do modelsim/wave.do
+# run 4.5 ms
+# ** Note: waiting for 0
+#    Time: 10 us  Iteration: 1  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 70020 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 72020 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 72020 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 74080 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 76080 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 76080 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 78140 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 80140 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 80140 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 82200 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 84200 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 84200 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 86260 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 88260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 88260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 90320 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 92320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 92320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 94380 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 96380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 96380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 98440 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 100440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 100440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 102500 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 104500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 104500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 106560 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 108560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 108560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 110620 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 112620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 112620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 114680 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 116680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 116680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 118740 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 120740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 120740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 122800 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 124800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 124800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 126860 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 128860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 128860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 130920 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 132920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 132920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 134980 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 136980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 136980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 139040 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 141040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 141040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 143100 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 145100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 145100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 147160 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 149160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 149160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 151220 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 153220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 153220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 155280 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 157280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 157280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 159340 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 161340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 161340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 163400 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 165400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 165400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 167460 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 169460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: poll_cmd read
+#    Time: 171460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: writing data
+#    Time: 172460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: state correct
+#    Time: 432460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 432460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 486080 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 488080 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 488080 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 490140 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 492140 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 492140 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 494200 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 496200 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 496200 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 498260 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 500260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 500260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 502320 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 504320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 504320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 506380 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 508380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 508380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 510440 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 512440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 512440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 514500 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 516500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 516500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 518560 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 520560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 520560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 522620 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 524620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 524620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 526680 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 528680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 528680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 530740 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 532740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 532740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 534800 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 536800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 536800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 538860 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 540860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 540860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 542920 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 544920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 544920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 546980 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 548980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 548980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 551040 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 553040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 553040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 555100 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 557100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 557100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 559160 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 561160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 561160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 563220 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 565220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 565220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 567280 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 569280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 569280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 571340 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 573340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 573340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 575400 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 577400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 577400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 579460 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 581460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 581460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 583520 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 585520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: poll_cmd read
+#    Time: 587520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: writing data
+#    Time: 588520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: state correct
+#    Time: 848520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 848520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 902140 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 904140 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 904140 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 906200 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 908200 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 908200 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 910260 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 912260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 912260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 914320 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 916320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 916320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 918380 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 920380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 920380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 922440 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 924440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 924440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 926500 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 928500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 928500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 930560 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 932560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 932560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 934620 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 936620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 936620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 938680 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 940680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 940680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 942740 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 944740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 944740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 946800 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 948800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 948800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 950860 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 952860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 952860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 954920 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 956920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 956920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 958980 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 960980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 960980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 963040 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 965040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 965040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 967100 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 969100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 969100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 971160 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 973160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 973160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 975220 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 977220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 977220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 979280 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 981280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 981280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 983340 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 985340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 985340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 987400 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 989400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 989400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 991460 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 993460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 993460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 995520 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 997520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 997520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 999580 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1001580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: poll_cmd read
+#    Time: 1003580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: writing data
+#    Time: 1004580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: state correct
+#    Time: 1264580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1264580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1318200 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1320200 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1320200 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1322260 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1324260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1324260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1326320 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1328320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1328320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1330380 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1332380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1332380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1334440 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1336440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1336440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1338500 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1340500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1340500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1342560 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1344560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1344560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1346620 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1348620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1348620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1350680 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1352680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1352680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1354740 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1356740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1356740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1358800 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1360800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1360800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1362860 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1364860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1364860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1366920 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1368920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1368920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1370980 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1372980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1372980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1375040 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1377040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1377040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1379100 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1381100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1381100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1383160 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1385160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1385160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1387220 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1389220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1389220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1391280 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1393280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1393280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1395340 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1397340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1397340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1399400 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1401400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1401400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1403460 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1405460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1405460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1407520 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1409520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1409520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1411580 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1413580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1413580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1415640 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1417640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: poll_cmd read
+#    Time: 1419640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: writing data
+#    Time: 1420640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: state correct
+#    Time: 1680640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1680640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1734260 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1736260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1736260 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1738320 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1740320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1740320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1742380 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1744380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1744380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1746440 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1748440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1748440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1750500 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1752500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1752500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1754560 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1756560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1756560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1758620 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1760620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1760620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1762680 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1764680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1764680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1766740 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1768740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1768740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1770800 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1772800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1772800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1774860 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1776860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1776860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1778920 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1780920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1780920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1782980 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1784980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1784980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1787040 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1789040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1789040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1791100 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1793100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1793100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1795160 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1797160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1797160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1799220 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1801220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1801220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1803280 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1805280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1805280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1807340 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1809340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1809340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1811400 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1813400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1813400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1815460 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1817460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1817460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1819520 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1821520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1821520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1823580 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1825580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1825580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1827640 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1829640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 1829640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 1831700 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 1833700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: poll_cmd read
+#    Time: 1835700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: writing data
+#    Time: 1836700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: state correct
+#    Time: 2096700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2096700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2150320 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2152320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2152320 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2154380 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2156380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2156380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2158440 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2160440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2160440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2162500 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2164500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2164500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2166560 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2168560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2168560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2170620 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2172620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2172620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2174680 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2176680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2176680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2178740 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2180740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2180740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2182800 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2184800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2184800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2186860 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2188860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2188860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2190920 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2192920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2192920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2194980 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2196980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2196980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2199040 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2201040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2201040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2203100 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2205100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2205100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2207160 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2209160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2209160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2211220 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2213220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2213220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2215280 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2217280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2217280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2219340 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2221340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2221340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2223400 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2225400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2225400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2227460 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2229460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2229460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2231520 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2233520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2233520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2235580 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2237580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2237580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2239640 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2241640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2241640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2243700 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2245700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2245700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2247760 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2249760 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: poll_cmd read
+#    Time: 2251760 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: writing data
+#    Time: 2252760 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: state correct
+#    Time: 2512760 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2512760 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2566380 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2568380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2568380 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2570440 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2572440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2572440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2574500 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2576500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2576500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2578560 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2580560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2580560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2582620 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2584620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2584620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2586680 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2588680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2588680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2590740 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2592740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2592740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2594800 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2596800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2596800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2598860 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2600860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2600860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2602920 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2604920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2604920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2606980 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2608980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2608980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2611040 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2613040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2613040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2615100 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2617100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2617100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2619160 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2621160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2621160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2623220 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2625220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2625220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2627280 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2629280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2629280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2631340 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2633340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2633340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2635400 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2637400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2637400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2639460 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2641460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2641460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2643520 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2645520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2645520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2647580 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2649580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2649580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2651640 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2653640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2653640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2655700 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2657700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2657700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2659760 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2661760 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2661760 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2663820 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2665820 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: poll_cmd read
+#    Time: 2667820 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: writing data
+#    Time: 2668820 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: state correct
+#    Time: 2928820 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2928820 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2982440 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2984440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2984440 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2986500 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2988500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2988500 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2990560 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2992560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2992560 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2994620 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 2996620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 2996620 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 2998680 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3000680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3000680 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3002740 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3004740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3004740 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3006800 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3008800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3008800 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3010860 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3012860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3012860 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3014920 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3016920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3016920 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3018980 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3020980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3020980 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3023040 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3025040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3025040 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3027100 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3029100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3029100 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3031160 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3033160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3033160 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3035220 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3037220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3037220 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3039280 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3041280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3041280 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3043340 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3045340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3045340 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3047400 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3049400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3049400 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3051460 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3053460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3053460 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3055520 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3057520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3057520 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3059580 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3061580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3061580 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3063640 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3065640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3065640 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3067700 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3069700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3069700 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3071760 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3073760 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3073760 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3075820 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3077820 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: waiting for 0
+#    Time: 3077820 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: found 0
+#    Time: 3079880 ns  Iteration: 3  Instance: /gc_cntrl_tb
+# ** Note: polling command right
+#    Time: 3081880 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: poll_cmd read
+#    Time: 3083880 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: writing data
+#    Time: 3084880 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# ** Note: state correct
+#    Time: 3344880 ns  Iteration: 0  Instance: /gc_cntrl_tb
+# End time: 21:51:00 on Apr 07,2022, Elapsed time: 0:02:31
+# Errors: 0, Warnings: 0

@@ -1,0 +1,91 @@
+when 0 =>
+							gfx_instr_wr <= '1';
+							gfx_instr <= gfx_instr_compact_bit_blit(true, false, false, true, false);
+							next_counter <= 0;	
+							next_blit_state <= blit_state + 1; 
+							next_leading_zero_flag <= true;
+							
+							when 1 =>
+								if number_synced >= 10_000 then
+									next_number_synced <= number_synced - 10_000;
+									next_counter <= counter + 1;
+									next_leading_zero_flag <= false;
+								else
+									gfx_instr_wr <= '1';
+									gfx_instr <= create_gfx_instr(counter, next_leading_zero_flag);
+									next_blit_state <= blit_state + 1; 
+								end if;
+
+							when 2 =>
+								gfx_instr_wr <= '1';
+								gfx_instr <= gfx_instr_compact_bit_blit(true, false, false, true, false);
+								next_counter <= 0;
+								next_blit_state <= blit_state + 1; 
+
+							when 3 =>
+								if number_synced >= 1_000 then
+									next_number_synced <= number_synced - 1_000;
+									next_counter <= counter + 1;
+									next_leading_zero_flag <= false;
+								else
+									gfx_instr_wr <= '1';
+									gfx_instr <= create_gfx_instr(counter, next_leading_zero_flag);
+									next_blit_state <= blit_state + 1; 
+								end if;
+
+							when 4 =>
+								gfx_instr_wr <= '1';
+								gfx_instr <= gfx_instr_compact_bit_blit(true, false, false, true, false);
+								next_counter <= 0;
+								next_blit_state <= blit_state + 1; 
+
+							when 5 =>
+								if number_synced >= 100 then
+									next_number_synced <= number_synced - 100;
+									next_counter <= counter + 1;
+									next_leading_zero_flag <= false;
+								else
+									gfx_instr_wr <= '1';
+									gfx_instr <= create_gfx_instr(counter, next_leading_zero_flag);
+									next_blit_state <= blit_state + 1; 
+								end if;
+
+							when 6 =>
+								gfx_instr_wr <= '1';
+								gfx_instr <= gfx_instr_compact_bit_blit(true, false, false, true, false);
+								next_counter <= 0;
+								next_blit_state <= blit_state + 1; 
+
+							when 7 =>
+								if number_synced >= 10 then
+									next_number_synced <= number_synced - 10;
+									next_counter <= counter + 1;
+									next_leading_zero_flag <= false;
+								else
+									gfx_instr_wr <= '1';
+									gfx_instr <= create_gfx_instr(counter, next_leading_zero_flag);
+									next_blit_state <= blit_state + 1; 
+								end if;
+
+							when 8 =>
+								gfx_instr_wr <= '1';
+								gfx_instr <= gfx_instr_compact_bit_blit(true, false, false, true, false);
+								next_counter <= 0;
+								next_blit_state <= blit_state + 1; 
+
+								-- last digit needs to be written
+								next_leading_zero_flag <= false;
+
+							when 9 =>
+								gfx_instr_wr <= '1';
+								gfx_instr <= create_gfx_instr(number_synced, next_leading_zero_flag);
+								next_blit_state <= blit_state + 1; 
+
+							when 10 =>
+								next_blit_state <= 0;
+								next_state <= WAIT_START;
+								busy <= '0';
+
+							when others =>
+								-- shouldnt happen
+						end case;

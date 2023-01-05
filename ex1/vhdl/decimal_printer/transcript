@@ -1,0 +1,1232 @@
+# vsim decimal_printer_tb -t 1ps -msgmode both
+# vsim decimal_printer_tb -t 1ps -msgmode both 
+# Start time: 23:56:28 on Apr 07,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c_1 linux Sep 15 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.vga_gfx_cntrl_pkg(body)
+# Loading work.gfx_util_pkg
+# Loading work.bb_rom_pkg
+# Loading work.decimal_printer_pkg
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.image_buffer_pkg(body)
+# Loading work.math_pkg(body)
+# Loading work.decimal_printer_tb(bench)#1
+# Loading work.gfx_instr_interpreter(arch)#1
+#  run 300 us
+# ** Note: read opcode at start: 1111
+#    Time: 50 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: start
+#    Time: 4390 ns  Iteration: 0  Instance: /decimal_printer_tb
+# ** Note: read opcode at start: 0001
+#    Time: 4430 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 4490 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 10    11
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 26    4    1111111111111111    0000   to   12    15
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 26    10    1111111111111111    0000   to   12    21
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    3    1111111111111111    0000   to   13    14
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    4    1111111111111111    0000   to   13    15
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    9    1111111111111111    0000   to   13    20
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    10    1111111111111111    0000   to   13    21
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    2    1111111111111111    0000   to   14    13
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    3    1111111111111111    0000   to   14    14
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    8    1111111111111111    0000   to   14    19
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    9    1111111111111111    0000   to   14    20
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    10    1111111111111111    0000   to   14    21
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    2    1111111111111111    0000   to   15    13
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    3    1111111111111111    0000   to   15    14
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    7    1111111111111111    0000   to   15    18
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    8    1111111111111111    0000   to   15    19
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    9    1111111111111111    0000   to   15    20
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    10    1111111111111111    0000   to   15    21
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    2    1111111111111111    0000   to   16    13
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    3    1111111111111111    0000   to   16    14
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    4    1111111111111111    0000   to   16    15
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    5    1111111111111111    0000   to   16    16
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    6    1111111111111111    0000   to   16    17
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    7    1111111111111111    0000   to   16    18
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    9    1111111111111111    0000   to   16    20
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    10    1111111111111111    0000   to   16    21
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    3    1111111111111111    0000   to   17    14
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    4    1111111111111111    0000   to   17    15
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    5    1111111111111111    0000   to   17    16
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    6    1111111111111111    0000   to   17    17
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    9    1111111111111111    0000   to   17    20
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    10    1111111111111111    0000   to   17    21
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    4    1111111111111111    0000   to   18    15
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    5    1111111111111111    0000   to   18    16
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    9    1111111111111111    0000   to   18    20
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    10    1111111111111111    0000   to   18    21
+#    Time: 4550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 4570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 22    11
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    4    1111111111111111    0000   to   25    15
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    5    1111111111111111    0000   to   25    16
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    7    1111111111111111    0000   to   25    18
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    8    1111111111111111    0000   to   25    19
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    9    1111111111111111    0000   to   25    20
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    3    1111111111111111    0000   to   26    14
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    4    1111111111111111    0000   to   26    15
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    5    1111111111111111    0000   to   26    16
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    6    1111111111111111    0000   to   26    17
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    7    1111111111111111    0000   to   26    18
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    8    1111111111111111    0000   to   26    19
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    9    1111111111111111    0000   to   26    20
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    10    1111111111111111    0000   to   26    21
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    2    1111111111111111    0000   to   27    13
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    3    1111111111111111    0000   to   27    14
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    6    1111111111111111    0000   to   27    17
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    9    1111111111111111    0000   to   27    20
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    10    1111111111111111    0000   to   27    21
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    2    1111111111111111    0000   to   28    13
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    3    1111111111111111    0000   to   28    14
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    6    1111111111111111    0000   to   28    17
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    9    1111111111111111    0000   to   28    20
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    10    1111111111111111    0000   to   28    21
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    3    1111111111111111    0000   to   29    14
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    4    1111111111111111    0000   to   29    15
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    5    1111111111111111    0000   to   29    16
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    6    1111111111111111    0000   to   29    17
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    7    1111111111111111    0000   to   29    18
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    8    1111111111111111    0000   to   29    19
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    9    1111111111111111    0000   to   29    20
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    10    1111111111111111    0000   to   29    21
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    4    1111111111111111    0000   to   30    15
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    5    1111111111111111    0000   to   30    16
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    7    1111111111111111    0000   to   30    18
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    8    1111111111111111    0000   to   30    19
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    9    1111111111111111    0000   to   30    20
+#    Time: 4750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 4770 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 34    11
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    4    1111111111111111    0000   to   37    15
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    5    1111111111111111    0000   to   37    16
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    7    1111111111111111    0000   to   37    18
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    8    1111111111111111    0000   to   37    19
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    9    1111111111111111    0000   to   37    20
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    3    1111111111111111    0000   to   38    14
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    4    1111111111111111    0000   to   38    15
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    5    1111111111111111    0000   to   38    16
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    6    1111111111111111    0000   to   38    17
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    7    1111111111111111    0000   to   38    18
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    8    1111111111111111    0000   to   38    19
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    9    1111111111111111    0000   to   38    20
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    10    1111111111111111    0000   to   38    21
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    2    1111111111111111    0000   to   39    13
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    3    1111111111111111    0000   to   39    14
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    6    1111111111111111    0000   to   39    17
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    9    1111111111111111    0000   to   39    20
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    10    1111111111111111    0000   to   39    21
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    2    1111111111111111    0000   to   40    13
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    3    1111111111111111    0000   to   40    14
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    6    1111111111111111    0000   to   40    17
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    9    1111111111111111    0000   to   40    20
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    10    1111111111111111    0000   to   40    21
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    3    1111111111111111    0000   to   41    14
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    4    1111111111111111    0000   to   41    15
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    5    1111111111111111    0000   to   41    16
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    6    1111111111111111    0000   to   41    17
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    7    1111111111111111    0000   to   41    18
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    8    1111111111111111    0000   to   41    19
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    9    1111111111111111    0000   to   41    20
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    10    1111111111111111    0000   to   41    21
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    4    1111111111111111    0000   to   42    15
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    5    1111111111111111    0000   to   42    16
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    7    1111111111111111    0000   to   42    18
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    8    1111111111111111    0000   to   42    19
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    9    1111111111111111    0000   to   42    20
+#    Time: 4950 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 4970 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 46    11
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 86    3    1111111111111111    0000   to   48    14
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 87    2    1111111111111111    0000   to   49    13
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 87    3    1111111111111111    0000   to   49    14
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 87    10    1111111111111111    0000   to   49    21
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 88    2    1111111111111111    0000   to   50    13
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 88    3    1111111111111111    0000   to   50    14
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 88    9    1111111111111111    0000   to   50    20
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 88    10    1111111111111111    0000   to   50    21
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    2    1111111111111111    0000   to   51    13
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    3    1111111111111111    0000   to   51    14
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    7    1111111111111111    0000   to   51    18
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    8    1111111111111111    0000   to   51    19
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    9    1111111111111111    0000   to   51    20
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    10    1111111111111111    0000   to   51    21
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    2    1111111111111111    0000   to   52    13
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    3    1111111111111111    0000   to   52    14
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    5    1111111111111111    0000   to   52    16
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    6    1111111111111111    0000   to   52    17
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    7    1111111111111111    0000   to   52    18
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    8    1111111111111111    0000   to   52    19
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    2    1111111111111111    0000   to   53    13
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    3    1111111111111111    0000   to   53    14
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    4    1111111111111111    0000   to   53    15
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    5    1111111111111111    0000   to   53    16
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    6    1111111111111111    0000   to   53    17
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 92    2    1111111111111111    0000   to   54    13
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 92    3    1111111111111111    0000   to   54    14
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 92    4    1111111111111111    0000   to   54    15
+#    Time: 5130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 5150 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 58    11
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    4    1111111111111111    0000   to   61    15
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    5    1111111111111111    0000   to   61    16
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    6    1111111111111111    0000   to   61    17
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    7    1111111111111111    0000   to   61    18
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    8    1111111111111111    0000   to   61    19
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    3    1111111111111111    0000   to   62    14
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    4    1111111111111111    0000   to   62    15
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    5    1111111111111111    0000   to   62    16
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    6    1111111111111111    0000   to   62    17
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    7    1111111111111111    0000   to   62    18
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    8    1111111111111111    0000   to   62    19
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    9    1111111111111111    0000   to   62    20
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    2    1111111111111111    0000   to   63    13
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    3    1111111111111111    0000   to   63    14
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    9    1111111111111111    0000   to   63    20
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    10    1111111111111111    0000   to   63    21
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    2    1111111111111111    0000   to   64    13
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    3    1111111111111111    0000   to   64    14
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    9    1111111111111111    0000   to   64    20
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    10    1111111111111111    0000   to   64    21
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    3    1111111111111111    0000   to   65    14
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    4    1111111111111111    0000   to   65    15
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    5    1111111111111111    0000   to   65    16
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    6    1111111111111111    0000   to   65    17
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    7    1111111111111111    0000   to   65    18
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    8    1111111111111111    0000   to   65    19
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    9    1111111111111111    0000   to   65    20
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    4    1111111111111111    0000   to   66    15
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    5    1111111111111111    0000   to   66    16
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    6    1111111111111111    0000   to   66    17
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    7    1111111111111111    0000   to   66    18
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    8    1111111111111111    0000   to   66    19
+#    Time: 5170 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: file getting dumped to ./frame_0.ppm
+#    Time: 24410 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0001
+#    Time: 29450 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 29510 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 10    11
+#    Time: 29530 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 29550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 22    11
+#    Time: 29570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 29590 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 34    11
+#    Time: 29610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 29630 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 46    11
+#    Time: 29650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 29670 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 58    11
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    4    1111111111111111    0000   to   61    15
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    5    1111111111111111    0000   to   61    16
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    6    1111111111111111    0000   to   61    17
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    7    1111111111111111    0000   to   61    18
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    8    1111111111111111    0000   to   61    19
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    3    1111111111111111    0000   to   62    14
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    4    1111111111111111    0000   to   62    15
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    5    1111111111111111    0000   to   62    16
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    6    1111111111111111    0000   to   62    17
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    7    1111111111111111    0000   to   62    18
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    8    1111111111111111    0000   to   62    19
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    9    1111111111111111    0000   to   62    20
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    2    1111111111111111    0000   to   63    13
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    3    1111111111111111    0000   to   63    14
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    9    1111111111111111    0000   to   63    20
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    10    1111111111111111    0000   to   63    21
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    2    1111111111111111    0000   to   64    13
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    3    1111111111111111    0000   to   64    14
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    9    1111111111111111    0000   to   64    20
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    10    1111111111111111    0000   to   64    21
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    3    1111111111111111    0000   to   65    14
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    4    1111111111111111    0000   to   65    15
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    5    1111111111111111    0000   to   65    16
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    6    1111111111111111    0000   to   65    17
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    7    1111111111111111    0000   to   65    18
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    8    1111111111111111    0000   to   65    19
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    9    1111111111111111    0000   to   65    20
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    4    1111111111111111    0000   to   66    15
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    5    1111111111111111    0000   to   66    16
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    6    1111111111111111    0000   to   66    17
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    7    1111111111111111    0000   to   66    18
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    8    1111111111111111    0000   to   66    19
+#    Time: 29690 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: file getting dumped to ./frame_1.ppm
+#    Time: 49430 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0001
+#    Time: 54470 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 54530 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 10    11
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 14    9    1111111111111111    0000   to   12    20
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 15    3    1111111111111111    0000   to   13    14
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 15    9    1111111111111111    0000   to   13    20
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 15    10    1111111111111111    0000   to   13    21
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 16    2    1111111111111111    0000   to   14    13
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 16    3    1111111111111111    0000   to   14    14
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 16    9    1111111111111111    0000   to   14    20
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 16    10    1111111111111111    0000   to   14    21
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 17    2    1111111111111111    0000   to   15    13
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 17    3    1111111111111111    0000   to   15    14
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 17    4    1111111111111111    0000   to   15    15
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 17    5    1111111111111111    0000   to   15    16
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 17    6    1111111111111111    0000   to   15    17
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 17    7    1111111111111111    0000   to   15    18
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 17    8    1111111111111111    0000   to   15    19
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 17    9    1111111111111111    0000   to   15    20
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 17    10    1111111111111111    0000   to   15    21
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 18    2    1111111111111111    0000   to   16    13
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 18    3    1111111111111111    0000   to   16    14
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 18    4    1111111111111111    0000   to   16    15
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 18    5    1111111111111111    0000   to   16    16
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 18    6    1111111111111111    0000   to   16    17
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 18    7    1111111111111111    0000   to   16    18
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 18    8    1111111111111111    0000   to   16    19
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 18    9    1111111111111111    0000   to   16    20
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 18    10    1111111111111111    0000   to   16    21
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 19    9    1111111111111111    0000   to   17    20
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 19    10    1111111111111111    0000   to   17    21
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 20    9    1111111111111111    0000   to   18    20
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 20    10    1111111111111111    0000   to   18    21
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 21    10    1111111111111111    0000   to   19    21
+#    Time: 54570 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 54590 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 22    11
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 26    4    1111111111111111    0000   to   24    15
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 26    10    1111111111111111    0000   to   24    21
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    3    1111111111111111    0000   to   25    14
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    4    1111111111111111    0000   to   25    15
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    9    1111111111111111    0000   to   25    20
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    10    1111111111111111    0000   to   25    21
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    2    1111111111111111    0000   to   26    13
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    3    1111111111111111    0000   to   26    14
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    8    1111111111111111    0000   to   26    19
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    9    1111111111111111    0000   to   26    20
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    10    1111111111111111    0000   to   26    21
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    2    1111111111111111    0000   to   27    13
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    3    1111111111111111    0000   to   27    14
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    7    1111111111111111    0000   to   27    18
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    8    1111111111111111    0000   to   27    19
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    9    1111111111111111    0000   to   27    20
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    10    1111111111111111    0000   to   27    21
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    2    1111111111111111    0000   to   28    13
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    3    1111111111111111    0000   to   28    14
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    4    1111111111111111    0000   to   28    15
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    5    1111111111111111    0000   to   28    16
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    6    1111111111111111    0000   to   28    17
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    7    1111111111111111    0000   to   28    18
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    9    1111111111111111    0000   to   28    20
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    10    1111111111111111    0000   to   28    21
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    3    1111111111111111    0000   to   29    14
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    4    1111111111111111    0000   to   29    15
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    5    1111111111111111    0000   to   29    16
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    6    1111111111111111    0000   to   29    17
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    9    1111111111111111    0000   to   29    20
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    10    1111111111111111    0000   to   29    21
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    4    1111111111111111    0000   to   30    15
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    5    1111111111111111    0000   to   30    16
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    9    1111111111111111    0000   to   30    20
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    10    1111111111111111    0000   to   30    21
+#    Time: 54650 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 54670 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 34    11
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 38    3    1111111111111111    0000   to   36    14
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 39    2    1111111111111111    0000   to   37    13
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 39    3    1111111111111111    0000   to   37    14
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 39    9    1111111111111111    0000   to   37    20
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 40    2    1111111111111111    0000   to   38    13
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 40    3    1111111111111111    0000   to   38    14
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 40    9    1111111111111111    0000   to   38    20
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 40    10    1111111111111111    0000   to   38    21
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 41    2    1111111111111111    0000   to   39    13
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 41    3    1111111111111111    0000   to   39    14
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 41    6    1111111111111111    0000   to   39    17
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 41    9    1111111111111111    0000   to   39    20
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 41    10    1111111111111111    0000   to   39    21
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 42    2    1111111111111111    0000   to   40    13
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 42    3    1111111111111111    0000   to   40    14
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 42    5    1111111111111111    0000   to   40    16
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 42    6    1111111111111111    0000   to   40    17
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 42    9    1111111111111111    0000   to   40    20
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 42    10    1111111111111111    0000   to   40    21
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 43    2    1111111111111111    0000   to   41    13
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 43    3    1111111111111111    0000   to   41    14
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 43    4    1111111111111111    0000   to   41    15
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 43    5    1111111111111111    0000   to   41    16
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 43    6    1111111111111111    0000   to   41    17
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 43    9    1111111111111111    0000   to   41    20
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 43    10    1111111111111111    0000   to   41    21
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 44    3    1111111111111111    0000   to   42    14
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 44    4    1111111111111111    0000   to   42    15
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 44    6    1111111111111111    0000   to   42    17
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 44    7    1111111111111111    0000   to   42    18
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 44    8    1111111111111111    0000   to   42    19
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 44    9    1111111111111111    0000   to   42    20
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 45    7    1111111111111111    0000   to   43    18
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 45    8    1111111111111111    0000   to   43    19
+#    Time: 54750 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 54770 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 46    11
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 50    7    1111111111111111    0000   to   48    18
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 50    8    1111111111111111    0000   to   48    19
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 51    5    1111111111111111    0000   to   49    16
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 51    6    1111111111111111    0000   to   49    17
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 51    7    1111111111111111    0000   to   49    18
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 51    8    1111111111111111    0000   to   49    19
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 52    4    1111111111111111    0000   to   50    15
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 52    5    1111111111111111    0000   to   50    16
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 52    6    1111111111111111    0000   to   50    17
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 52    7    1111111111111111    0000   to   50    18
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 52    8    1111111111111111    0000   to   50    19
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 53    3    1111111111111111    0000   to   51    14
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 53    4    1111111111111111    0000   to   51    15
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 53    5    1111111111111111    0000   to   51    16
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 53    7    1111111111111111    0000   to   51    18
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 53    8    1111111111111111    0000   to   51    19
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 54    2    1111111111111111    0000   to   52    13
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 54    3    1111111111111111    0000   to   52    14
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 54    4    1111111111111111    0000   to   52    15
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 54    7    1111111111111111    0000   to   52    18
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 54    8    1111111111111111    0000   to   52    19
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 55    2    1111111111111111    0000   to   53    13
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 55    3    1111111111111111    0000   to   53    14
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 55    4    1111111111111111    0000   to   53    15
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 55    5    1111111111111111    0000   to   53    16
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 55    6    1111111111111111    0000   to   53    17
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 55    7    1111111111111111    0000   to   53    18
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 55    8    1111111111111111    0000   to   53    19
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 55    9    1111111111111111    0000   to   53    20
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 55    10    1111111111111111    0000   to   53    21
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 56    2    1111111111111111    0000   to   54    13
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 56    3    1111111111111111    0000   to   54    14
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 56    4    1111111111111111    0000   to   54    15
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 56    5    1111111111111111    0000   to   54    16
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 56    6    1111111111111111    0000   to   54    17
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 56    7    1111111111111111    0000   to   54    18
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 56    8    1111111111111111    0000   to   54    19
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 56    9    1111111111111111    0000   to   54    20
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 56    10    1111111111111111    0000   to   54    21
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 57    7    1111111111111111    0000   to   55    18
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 57    8    1111111111111111    0000   to   55    19
+#    Time: 54870 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 54890 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 58    11
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 63    3    1111111111111111    0000   to   61    14
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 63    4    1111111111111111    0000   to   61    15
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 63    5    1111111111111111    0000   to   61    16
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 63    6    1111111111111111    0000   to   61    17
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 63    9    1111111111111111    0000   to   61    20
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 64    2    1111111111111111    0000   to   62    13
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 64    3    1111111111111111    0000   to   62    14
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 64    4    1111111111111111    0000   to   62    15
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 64    5    1111111111111111    0000   to   62    16
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 64    6    1111111111111111    0000   to   62    17
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 64    9    1111111111111111    0000   to   62    20
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 64    10    1111111111111111    0000   to   62    21
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 65    2    1111111111111111    0000   to   63    13
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 65    3    1111111111111111    0000   to   63    14
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 65    5    1111111111111111    0000   to   63    16
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 65    6    1111111111111111    0000   to   63    17
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 65    9    1111111111111111    0000   to   63    20
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 65    10    1111111111111111    0000   to   63    21
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 66    2    1111111111111111    0000   to   64    13
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 66    3    1111111111111111    0000   to   64    14
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 66    6    1111111111111111    0000   to   64    17
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 66    9    1111111111111111    0000   to   64    20
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 66    10    1111111111111111    0000   to   64    21
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 67    2    1111111111111111    0000   to   65    13
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 67    3    1111111111111111    0000   to   65    14
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 67    6    1111111111111111    0000   to   65    17
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 67    7    1111111111111111    0000   to   65    18
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 67    8    1111111111111111    0000   to   65    19
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 67    9    1111111111111111    0000   to   65    20
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 67    10    1111111111111111    0000   to   65    21
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 68    7    1111111111111111    0000   to   66    18
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 68    8    1111111111111111    0000   to   66    19
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 68    9    1111111111111111    0000   to   66    20
+#    Time: 55010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: file getting dumped to ./frame_2.ppm
+#    Time: 74450 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0001
+#    Time: 79490 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 79550 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 10    11
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 26    4    1111111111111111    0000   to   12    15
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 26    10    1111111111111111    0000   to   12    21
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    3    1111111111111111    0000   to   13    14
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    4    1111111111111111    0000   to   13    15
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    9    1111111111111111    0000   to   13    20
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 27    10    1111111111111111    0000   to   13    21
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    2    1111111111111111    0000   to   14    13
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    3    1111111111111111    0000   to   14    14
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    8    1111111111111111    0000   to   14    19
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    9    1111111111111111    0000   to   14    20
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 28    10    1111111111111111    0000   to   14    21
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    2    1111111111111111    0000   to   15    13
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    3    1111111111111111    0000   to   15    14
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    7    1111111111111111    0000   to   15    18
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    8    1111111111111111    0000   to   15    19
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    9    1111111111111111    0000   to   15    20
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 29    10    1111111111111111    0000   to   15    21
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    2    1111111111111111    0000   to   16    13
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    3    1111111111111111    0000   to   16    14
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    4    1111111111111111    0000   to   16    15
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    5    1111111111111111    0000   to   16    16
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    6    1111111111111111    0000   to   16    17
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    7    1111111111111111    0000   to   16    18
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    9    1111111111111111    0000   to   16    20
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 30    10    1111111111111111    0000   to   16    21
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    3    1111111111111111    0000   to   17    14
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    4    1111111111111111    0000   to   17    15
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    5    1111111111111111    0000   to   17    16
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    6    1111111111111111    0000   to   17    17
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    9    1111111111111111    0000   to   17    20
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 31    10    1111111111111111    0000   to   17    21
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    4    1111111111111111    0000   to   18    15
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    5    1111111111111111    0000   to   18    16
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    9    1111111111111111    0000   to   18    20
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 32    10    1111111111111111    0000   to   18    21
+#    Time: 79610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 79630 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 22    11
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    4    1111111111111111    0000   to   25    15
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    5    1111111111111111    0000   to   25    16
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    7    1111111111111111    0000   to   25    18
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    8    1111111111111111    0000   to   25    19
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    9    1111111111111111    0000   to   25    20
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    3    1111111111111111    0000   to   26    14
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    4    1111111111111111    0000   to   26    15
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    5    1111111111111111    0000   to   26    16
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    6    1111111111111111    0000   to   26    17
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    7    1111111111111111    0000   to   26    18
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    8    1111111111111111    0000   to   26    19
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    9    1111111111111111    0000   to   26    20
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    10    1111111111111111    0000   to   26    21
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    2    1111111111111111    0000   to   27    13
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    3    1111111111111111    0000   to   27    14
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    6    1111111111111111    0000   to   27    17
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    9    1111111111111111    0000   to   27    20
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    10    1111111111111111    0000   to   27    21
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    2    1111111111111111    0000   to   28    13
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    3    1111111111111111    0000   to   28    14
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    6    1111111111111111    0000   to   28    17
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    9    1111111111111111    0000   to   28    20
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    10    1111111111111111    0000   to   28    21
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    3    1111111111111111    0000   to   29    14
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    4    1111111111111111    0000   to   29    15
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    5    1111111111111111    0000   to   29    16
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    6    1111111111111111    0000   to   29    17
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    7    1111111111111111    0000   to   29    18
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    8    1111111111111111    0000   to   29    19
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    9    1111111111111111    0000   to   29    20
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    10    1111111111111111    0000   to   29    21
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    4    1111111111111111    0000   to   30    15
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    5    1111111111111111    0000   to   30    16
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    7    1111111111111111    0000   to   30    18
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    8    1111111111111111    0000   to   30    19
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    9    1111111111111111    0000   to   30    20
+#    Time: 79810 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 79830 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 34    11
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    4    1111111111111111    0000   to   37    15
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    5    1111111111111111    0000   to   37    16
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    7    1111111111111111    0000   to   37    18
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    8    1111111111111111    0000   to   37    19
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 99    9    1111111111111111    0000   to   37    20
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    3    1111111111111111    0000   to   38    14
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    4    1111111111111111    0000   to   38    15
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    5    1111111111111111    0000   to   38    16
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    6    1111111111111111    0000   to   38    17
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    7    1111111111111111    0000   to   38    18
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    8    1111111111111111    0000   to   38    19
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    9    1111111111111111    0000   to   38    20
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 100    10    1111111111111111    0000   to   38    21
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    2    1111111111111111    0000   to   39    13
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    3    1111111111111111    0000   to   39    14
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    6    1111111111111111    0000   to   39    17
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    9    1111111111111111    0000   to   39    20
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 101    10    1111111111111111    0000   to   39    21
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    2    1111111111111111    0000   to   40    13
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    3    1111111111111111    0000   to   40    14
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    6    1111111111111111    0000   to   40    17
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    9    1111111111111111    0000   to   40    20
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 102    10    1111111111111111    0000   to   40    21
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    3    1111111111111111    0000   to   41    14
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    4    1111111111111111    0000   to   41    15
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    5    1111111111111111    0000   to   41    16
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    6    1111111111111111    0000   to   41    17
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    7    1111111111111111    0000   to   41    18
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    8    1111111111111111    0000   to   41    19
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    9    1111111111111111    0000   to   41    20
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 103    10    1111111111111111    0000   to   41    21
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    4    1111111111111111    0000   to   42    15
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    5    1111111111111111    0000   to   42    16
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    7    1111111111111111    0000   to   42    18
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    8    1111111111111111    0000   to   42    19
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 104    9    1111111111111111    0000   to   42    20
+#    Time: 80010 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 80030 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 46    11
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 86    3    1111111111111111    0000   to   48    14
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 87    2    1111111111111111    0000   to   49    13
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 87    3    1111111111111111    0000   to   49    14
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 87    10    1111111111111111    0000   to   49    21
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 88    2    1111111111111111    0000   to   50    13
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 88    3    1111111111111111    0000   to   50    14
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 88    9    1111111111111111    0000   to   50    20
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 88    10    1111111111111111    0000   to   50    21
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    2    1111111111111111    0000   to   51    13
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    3    1111111111111111    0000   to   51    14
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    7    1111111111111111    0000   to   51    18
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    8    1111111111111111    0000   to   51    19
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    9    1111111111111111    0000   to   51    20
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 89    10    1111111111111111    0000   to   51    21
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    2    1111111111111111    0000   to   52    13
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    3    1111111111111111    0000   to   52    14
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    5    1111111111111111    0000   to   52    16
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    6    1111111111111111    0000   to   52    17
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    7    1111111111111111    0000   to   52    18
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 90    8    1111111111111111    0000   to   52    19
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    2    1111111111111111    0000   to   53    13
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    3    1111111111111111    0000   to   53    14
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    4    1111111111111111    0000   to   53    15
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    5    1111111111111111    0000   to   53    16
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 91    6    1111111111111111    0000   to   53    17
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 92    2    1111111111111111    0000   to   54    13
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 92    3    1111111111111111    0000   to   54    14
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 92    4    1111111111111111    0000   to   54    15
+#    Time: 80190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0110
+#    Time: 80210 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read compact bit blit: 58    11
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    4    1111111111111111    0000   to   61    15
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    5    1111111111111111    0000   to   61    16
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    6    1111111111111111    0000   to   61    17
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    7    1111111111111111    0000   to   61    18
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 3    8    1111111111111111    0000   to   61    19
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    3    1111111111111111    0000   to   62    14
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    4    1111111111111111    0000   to   62    15
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    5    1111111111111111    0000   to   62    16
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    6    1111111111111111    0000   to   62    17
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    7    1111111111111111    0000   to   62    18
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    8    1111111111111111    0000   to   62    19
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 4    9    1111111111111111    0000   to   62    20
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    2    1111111111111111    0000   to   63    13
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    3    1111111111111111    0000   to   63    14
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    9    1111111111111111    0000   to   63    20
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 5    10    1111111111111111    0000   to   63    21
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    2    1111111111111111    0000   to   64    13
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    3    1111111111111111    0000   to   64    14
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    9    1111111111111111    0000   to   64    20
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 6    10    1111111111111111    0000   to   64    21
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    3    1111111111111111    0000   to   65    14
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    4    1111111111111111    0000   to   65    15
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    5    1111111111111111    0000   to   65    16
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    6    1111111111111111    0000   to   65    17
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    7    1111111111111111    0000   to   65    18
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    8    1111111111111111    0000   to   65    19
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 7    9    1111111111111111    0000   to   65    20
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    4    1111111111111111    0000   to   66    15
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    5    1111111111111111    0000   to   66    16
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    6    1111111111111111    0000   to   66    17
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    7    1111111111111111    0000   to   66    18
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: writing to img buffer 8    8    1111111111111111    0000   to   66    19
+#    Time: 80230 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 1001
+#    Time: 89490 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0100
+#    Time: 89610 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0010
+#    Time: 89730 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0010
+#    Time: 89850 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0010
+#    Time: 89970 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0010
+#    Time: 90090 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: read opcode at start: 0101
+#    Time: 90110 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: red x as 2
+#    Time: 90130 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# ** Note: file getting dumped to ./frame_3.ppm
+#    Time: 95190 ns  Iteration: 1  Instance: /decimal_printer_tb/interpreter/gfx_instr_interpreter_inst
+# quit
+# End time: 23:56:30 on Apr 07,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

@@ -1,0 +1,253 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gc_cntrl
+T_opt
+!s110 1649360910
+VD[kFoiJ@NI=P5ESN?I1H_1
+04 11 2 work gc_cntrl_tb tb 1
+=1-000ae431a4f1-624f400d-e18ef-6fa0
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OE;O;10.6c_1;65
+Egc_cntrl
+Z1 w1649360232
+Z2 DPx4 work 8 sync_pkg 0 22 E8Vz0hO7]UQDD>1>Nn`P?1
+Z3 DPx4 work 12 gc_cntrl_pkg 0 22 ;Zn]4@=h4Rf0=Ai3]2CYQ2
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8./src/gc_cntrl.vhd
+Z8 F./src/gc_cntrl.vhd
+l0
+L8
+VOUHRV33CSzRCQ:SOa61G62
+!s100 <^ogR9@KBFgh];l@8b0h<0
+Z9 OE;C;10.6c_1;65
+33
+Z10 !s110 1649360904
+!i10b 1
+Z11 !s108 1649360904.000000
+Z12 !s90 -2008|-work|work|-suppress|1236|./src/gc_cntrl.vhd|
+Z13 !s107 ./src/gc_cntrl.vhd|
+!i113 0
+Z14 o-suppress 1236 -2008 -work work
+Z15 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 8 gc_cntrl 0 22 OUHRV33CSzRCQ:SOa61G62
+l50
+L24
+V=XN<^;O`R32E>?gE5WaW;2
+!s100 7ljn]jB[n_SSmZjMe39Y20
+R9
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Pgc_cntrl_pkg
+R4
+R5
+R6
+Z16 w1648558422
+R0
+Z17 8./src/gc_cntrl_pkg.vhd
+Z18 F./src/gc_cntrl_pkg.vhd
+l0
+L5
+V;Zn]4@=h4Rf0=Ai3]2CYQ2
+!s100 oIX8Q4VW7S0Q[`KmT`i>d2
+R9
+33
+b1
+R10
+!i10b 1
+R11
+Z19 !s90 -2008|-work|work|-suppress|1236|./src/gc_cntrl_pkg.vhd|
+Z20 !s107 ./src/gc_cntrl_pkg.vhd|
+!i113 0
+R14
+R15
+Bbody
+R3
+R4
+R5
+R6
+l0
+L69
+VMz6C=:]=L9`4C6[:5ghAK1
+!s100 2R[`[nnIJ;:@81W6@jEWh0
+R9
+33
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 0
+R14
+R15
+Egc_cntrl_tb
+Z21 w1648745871
+R3
+R2
+Z22 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R4
+R5
+R6
+R0
+Z23 8./tb/gc_cntrl_tb.vhd
+Z24 F./tb/gc_cntrl_tb.vhd
+l0
+L11
+Vj=kQWaQ=LCj9HF2Y[cJ_^0
+!s100 ogh5hj@ATXVFP;_T]79d33
+R9
+33
+R10
+!i10b 1
+R11
+Z25 !s90 -2008|-work|work|-suppress|1236|./tb/gc_cntrl_tb.vhd|
+Z26 !s107 ./tb/gc_cntrl_tb.vhd|
+!i113 0
+R14
+R15
+Atb
+R3
+R2
+R22
+R4
+R5
+R6
+DEx4 work 11 gc_cntrl_tb 0 22 j=kQWaQ=LCj9HF2Y[cJ_^0
+l26
+L14
+VJ^dzP<P=<^>k=D9CC>onB1
+!s100 `BeCL?VM2;>CeWP;XUZ2K3
+R9
+33
+R10
+!i10b 1
+R11
+R25
+R26
+!i113 0
+R14
+R15
+Pmath_pkg
+Z27 w1648224739
+R0
+Z28 8../math/src/math_pkg.vhd
+Z29 F../math/src/math_pkg.vhd
+l0
+L2
+VK93d5ThEW`PiMGBULU?K^3
+!s100 82?>0X=_cRGX6GUC@W;9^3
+R9
+33
+b1
+R10
+!i10b 1
+R11
+Z30 !s90 -2008|-work|work|-suppress|1236|../math/src/math_pkg.vhd|
+Z31 !s107 ../math/src/math_pkg.vhd|
+!i113 0
+R14
+R15
+Bbody
+DPx4 work 8 math_pkg 0 22 K93d5ThEW`PiMGBULU?K^3
+l0
+L10
+V@Q0CjE?m0c:6o<GU`41U:0
+!s100 3];L1Zk2hFnHVD32?]WhO2
+R9
+33
+R10
+!i10b 1
+R11
+R30
+R31
+!i113 0
+R14
+R15
+Eprecompiled_gc_cntrl
+R27
+R3
+R4
+R5
+R6
+R0
+Z32 8./src/precompiled_gc_cntrl.vhd
+Z33 F./src/precompiled_gc_cntrl.vhd
+l0
+L6
+VE@cKeZ`9^;T_;XHMjl1ST3
+!s100 H]6c@[MBomGGED]@7K<D`0
+R9
+33
+R10
+!i10b 1
+R11
+Z34 !s90 -2008|-work|work|-suppress|1236|./src/precompiled_gc_cntrl.vhd|
+Z35 !s107 ./src/precompiled_gc_cntrl.vhd|
+!i113 0
+R14
+R15
+Artl
+R3
+R4
+R5
+R6
+DEx4 work 20 precompiled_gc_cntrl 0 22 E@cKeZ`9^;T_;XHMjl1ST3
+l31
+L20
+V1GnA`MPa?zZUU<2>QSVLT0
+!s100 E;1i`^d4`R8ggz4zHb?XD0
+R9
+33
+R10
+!i10b 1
+R11
+R34
+R35
+!i113 0
+R14
+R15
+Psync_pkg
+R5
+R6
+R27
+R0
+8../synchronizer/src/sync_pkg.vhd
+F../synchronizer/src/sync_pkg.vhd
+l0
+L23
+VE8Vz0hO7]UQDD>1>Nn`P?1
+!s100 i_4j`dkU1c^:CUC>dY0ZJ1
+R9
+33
+R10
+!i10b 1
+R11
+!s90 -2008|-work|work|-suppress|1236|../synchronizer/src/sync_pkg.vhd|
+!s107 ../synchronizer/src/sync_pkg.vhd|
+!i113 0
+R14
+R15

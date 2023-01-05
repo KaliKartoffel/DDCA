@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "CentOS Linux",
+		"os_version" : ""
+	},
+	"error" : {
+		"executable" : "quartus_eda",
+		"comment" : "not_applicable",
+		"error_message" : "m_timing_manager",
+		"source_file" : "/quartus/neto/sut/sut_delay_util_helper.cpp",
+		"line" : "86",
+		"stack_trace" : "\t0x7f92c6da4bdb: neto_sut + 0x50bdb (_ZN21SUT_DELAY_UTIL_HELPERC2EN14SUT_DELAY_UTIL9TOOL_TYPEE + 0x7b)\n\t0x7f92c6d89c20: neto_sut + 0x35c20 (_ZN19SUT_DELAY_UTIL_IMPL18visit_atom_io_obufEP13CDB_ATOM_NODE + 0x64)\n\t0x7f92c6d9f02b: neto_sut + 0x4b02b (_ZN19SUT_DELAY_UTIL_IMPL23visit_atom_cuda_io_obufEP21CDB_ATOM_CUDA_IO_OBUF + 0x9)\n\t0x7f92c6d7ca03: neto_sut + 0x28a03 (_ZN19SUT_DELAY_UTIL_IMPL18get_atom_sdf_cellsEP13CDB_ATOM_NODEP18SUT_ATOM_SDF_CELLSN14SUT_DELAY_UTIL9TOOL_TYPEE + 0xed)\n\t0x7f92c6d7c46b: neto_sut + 0x2846b (_ZN14SUT_DELAY_UTIL18get_atom_sdf_cellsEP13CDB_ATOM_NODEP18SUT_ATOM_SDF_CELLSNS_9TOOL_TYPEEb + 0x7f)\n\t0x7f92cd2ce982: neto_sdo + 0x31982 (_ZN10SDO_WRITER17write_atom_delaysEP13CDB_ATOM_NODEP14SUT_DELAY_UTILP8WUTIL_DB + 0x118)\n\t0x7f92cd2cf04c: neto_sdo + 0x3204c (_ZN10SDO_WRITER15write_hierarchyEP18WSC_HIERARCHY_INFOP14SUT_DELAY_UTIL + 0x2fe)\n\t0x7f92cd2cf4e0: neto_sdo + 0x324e0 (_ZN10SDO_WRITER17write_hierarchiesEv + 0xce)\n\t0x7f92cd2cfadc: neto_sdo + 0x32adc (_ZN10SDO_WRITER10write_fileEv + 0x51e)\n\t0x7f92cd2cfdf1: neto_sdo + 0x32df1 (_Z21sdo_generate_sdo_fileP10WSC_WRITERP21WSC_HIERARCHY_BUILDERRKSsS4_S4_bi + 0xb5)\n\t   0x430b32: quartus_eda + 0x30b32 (_ZN11QNETO_START25generate_simulation_filesE16WSC_NETLIST_TYPERK10QEDAU_UTIL15DEV_FAMILY_ENUM + 0x12e4)\n\t   0x432183: quartus_eda + 0x32183 (_ZN11QNETO_START25generate_simulation_filesE14QEDA_CALL_TYPERK10QEDAU_UTIL + 0x50b)\n\t   0x438989: quartus_eda + 0x38989 (_ZN11QNETO_START18generate_eda_filesE14QEDA_CALL_TYPERK10QEDAU_UTIL + 0x39)\n\t   0x43eadd: quartus_eda + 0x3eadd (_Z22generate_all_eda_filesP10CMP_FACADERK10QEDAU_UTIL + 0x45)\n\t   0x44090e: quartus_eda + 0x4090e (_Z13qneto_executeP10CMP_FACADEPKcbbSsSsSsbRK10QEDAU_UTIL + 0x1c82)\n\t   0x412aa0: quartus_eda + 0x12aa0 (_ZN15QNETO_FRAMEWORK7executeEv + 0x52a)\n\t0x7f92c015a75b: comp_qexe + 0x1c75b (_Z18qexe_standard_mainP14QEXE_FRAMEWORKPPK22QEXE_OPTION_DEFINITIONiPPKc + 0x888)\n\t   0x412e51: quartus_eda + 0x12e51 (_Z10qneto_mainiPPKc + 0x9b)\n\t0x7f929d768720: ccl_msg + 0x40720 (_Z15msg_main_threadPv + 0x10)\n\t0x7f929aac002c: ccl_thr + 0x602c (thr_final_wrapper + 0xc)\n\t0x7f929d7687df: ccl_msg + 0x407df (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7f929b131559: ccl_mem + 0xa559 (_Z18mem_thread_wrapperPFPvS_ES_ + 0x99)\n\t0x7f929aefef92: ccl_err + 0x8f92 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7f929aac03f2: ccl_thr + 0x63f2 (thr_thread_wrapper + 0x15)\n\t0x7f929d76a7e2: ccl_msg + 0x427e2 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xa3)\n\t   0x41aa68: quartus_eda + 0x1aa68 (main + 0x26)\n\t0x7f92957c0555: c.so.6 + 0x22555 (__libc_start_main + 0xf5)\n\t   0x410ec9: quartus_eda + 0x10ec9\n",
+		"subsystem" : "SUT"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "18.1.0",
+		"build" : "625",
+		"edition" : "Standard Edition"
+	}
+}

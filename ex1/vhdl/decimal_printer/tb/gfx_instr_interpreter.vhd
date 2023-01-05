@@ -1,0 +1,417 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.math_real.all;
+
+use std.textio.all;
+use ieee.std_logic_textio.all;
+
+use work.gfx_util_pkg.all;
+use work.vga_gfx_cntrl_pkg.all;
+use work.bb_rom_pkg.all;
+use work.image_buffer_pkg.all;
+use work.math_pkg.all;
+
+entity gfx_instr_interpreter is
+  generic (
+    OUTPUT_DIR : string   := "./";
+    BB_ROM     : bb_rom_t := MEMORY_CONTENTS
+    );
+  port (
+    clk : in std_logic;
+
+    gfx_instr      : in  std_logic_vector(GFX_INSTR_WIDTH-1 downto 0);
+    gfx_instr_wr   : in  std_logic;
+    gfx_frame_sync : out std_logic;
+
+    dump_frame : in std_logic
+    );
+end entity;
+
+
+
+architecture arch of gfx_instr_interpreter is
+  constant WIDTH  : integer := 320;
+  constant HEIGHT : integer := 240;
+
+  --use this signal to store the color palettes
+  type color_array_t is array(natural range<>) of std_logic_vector(15 downto 0);
+  signal palette : color_array_t(0 to 16*32-1) := (others => x"0000");
+
+  -- you can use these signals for the internal registers 
+  signal gp_x             : std_logic_vector(15 downto 0) := (others => '0');
+  signal gp_y             : std_logic_vector(15 downto 0) := (others => '0');
+  signal selected_palette : std_logic_vector(4 downto 0)  := (others => '0');
+  signal alpha_color      : std_logic_vector(3 downto 0)  := (others => '0');
+
+
+  shared variable img : image_buffer_t;
+
+  --gets the actual 16-bit color value from the currently selected palette
+  impure function get_palette_color(color : std_logic_vector(3 downto 0)) return std_logic_vector is
+  begin
+    return palette(to_integer(unsigned(selected_palette) * 16 + unsigned(color)));
+  end function;
+
+  --gets a pixel (4-bit) from the bit blitter memory
+  function get_pixel_bb_rom(x, y : integer) return std_logic_vector is
+    constant BB_ROM_ADDR_WIDTH : integer := log2c(BB_ROM'length);
+  begin
+    return BB_ROM(y*(2**(BB_ROM_ADDR_WIDTH/2)) + x);
+  end function;
+
+  signal read_opcode  : boolean                      := true;
+  signal opcode_debug : std_logic_vector(3 downto 0) := (others => '0');
+  signal state_debug  : integer                      := 0;
+
+  file file_out_id : text;
+
+begin
+  --be sure to initalize your image buffer(s)
+  init_buffers : process
+  begin
+    img.Init(WIDTH, HEIGHT, 16);
+    wait;
+  end process;
+
+  --demo_access : process
+  --begin
+  --    wait for 1 ns;
+  --    report "write to the pixel in the top left corner";
+  --    img.set_pixel(0, 0, x"0000");
+  --    assert img.get_pixel(0, 0) = x"0000" severity error;
+  --    
+  --    report "write to the pixel at position x=y=1";
+  --    img.set_pixel(1, 1, get_palette_color(get_pixel_bb_rom(42,42)));
+  --    assert img.get_pixel(1, 1) = get_palette_color(get_pixel_bb_rom(42,42)) severity error;
+  --    wait;
+  --end process;
+
+
+  --demo_access2 : process
+  --begin
+  --    wait for 2 ns;
+  --    report "shared variables can be accessed from multiple processes!";
+  --    report "write to the pixel in the lower right corner";
+  --    img.set_pixel(319, 239, x"ddca");
+  --    assert img.get_pixel(319, 239) = x"ddca" severity error;
+  --    report "done";
+  --    wait;
+  --end process;
+
+  my_read : process                     --(clk, gfx_instr_wr)
+    variable opcode                                        : std_logic_vector(3 downto 0) := (others => '0');  --NOP instr
+    variable rel                                           : std_logic                    := '0';
+    variable state                                         : integer                      := 0;
+    variable mov_x, mov_y, alpha, hflip, vflip             : std_logic                    := '0';
+    variable x, y, my_width, my_height, gp_x_tmp, gp_y_tmp : integer                      := 0;
+    variable x_tmp_tmp, y_tmp_tmp                          : integer                      := 0;
+    variable temp                                          : integer;
+    variable counter                                       : integer;
+  begin
+    --if (rising_edge(clk)) then
+    --while true loop
+    wait until rising_edge(clk);
+    gfx_frame_sync <= '0';
+
+    --TESTING
+    --selected_palette <= "00000";
+    --palette(0 * 16 + 0) <= x"ffff";
+    --palette(to_integer(unsigned(selected_palette) * 16 + 5)) <= x"0000";
+    --END TESTING CODE
+    state_debug  <= state;
+    opcode_debug <= opcode;
+--              report "pre gfx_instr";
+
+    if gfx_instr_wr = '1' then
+      if read_opcode = true then
+        opcode      := gfx_instr(15 downto 12);
+        read_opcode <= false;
+        --report "mein opcode = " & to_string(opcode);
+        if opcode /= "0000" then
+          report "read opcode at start: " & to_string(opcode);
+        end if;
+      end if;
+
+
+      -- use variable for isntant change 
+      case opcode is
+        when OPCODE_NOP =>
+          read_opcode <= true;
+
+        when OPCODE_MOVE_GP =>
+                                        --report "opcode move_gp";
+                                        -- worth 3 instructions
+          state := state + 1;
+          case state is
+            when 1 =>
+                                        --reading opcode info
+              rel := gfx_instr(RELATIVE_FLAG_INDEX);
+            when 2 =>
+              if rel = '1' then
+                gp_x <= std_logic_vector(to_signed(to_integer(signed(gp_x)) + to_integer(signed(gfx_instr)), 16));
+              else
+                gp_x <= gfx_instr;
+              end if;
+            when 3 =>
+              if rel = '1' then
+                gp_y <= std_logic_vector(to_signed(to_integer(signed(gp_y)) + to_integer(signed(gfx_instr)), 16));
+              else
+                gp_y <= gfx_instr;
+              end if;
+                                        --reset 
+                                        --report "moved gp_x and gp_y to: " & to_string(to_integer(signed(gp_x))) & "    " & to_string(to_integer(signed(gp_y)));
+              read_opcode <= true;
+              state       := 0;
+            when others =>
+                                        --cant happen
+          end case;
+
+        when OPCODE_COMPACT_BIT_BLIT =>
+          state := state + 1;
+          case state is
+            when 1 =>
+              alpha := gfx_instr(ALPHA_MODE_FLAG_INDEX);
+              mov_x := gfx_instr(MOVX_INDEX);
+              mov_y := gfx_instr(MOVY_INDEX);
+              hflip := gfx_instr(HFLIP_INDEX);
+              vflip := gfx_instr(VFLIP_INDEX);
+
+            when 2 =>
+
+              x         := to_integer(unsigned(gfx_instr(15 downto 12)));
+              y         := to_integer(unsigned(gfx_instr(11 downto 8)));
+              my_width  := to_integer(unsigned(gfx_instr(7 downto 4)));
+              my_height := to_integer(unsigned(gfx_instr(3 downto 0)));
+                                        --actually print stuff to image buffer
+                                        -- ignoring h and vflip so far
+              gp_y_tmp  := to_integer(signed(gp_y));
+              gp_x_tmp  := to_integer(signed(gp_x));
+
+              report "read compact bit blit: " & integer'image(gp_x_tmp) & "    " & integer'image(gp_y_tmp);
+
+
+
+                                        --report "entering loops x and x+my_width: " & integer'image(x) & "    " & integer'image(x+my_width);
+              for x_tmp in x*3*4 to x*3*4+my_width loop
+                for y_tmp in y*3*4 to y*3*4+my_height loop
+                                        -- hflip and vflip working
+                  if (hflip = '1') then
+                    x_tmp_tmp := x*3*4+my_width-x_tmp+x*3*4;
+                  else
+                    x_tmp_tmp := x_tmp;
+                  end if;
+
+                  if (vflip = '1') then
+                    y_tmp_tmp := y*3*4+my_width-y_tmp;
+                  else
+                    y_tmp_tmp := y_tmp;
+                  end if;
+
+
+                                        --report "setting pixel: " & integer'image(gp_x_tmp) & "    " & integer'image(gp_y_tmp) & "    "; --& integer'image(get_palette_color(get_pixel_bb_rom(x, y)));
+                  if (to_integer(unsigned((get_pixel_bb_rom(x_tmp_tmp, y_tmp_tmp)))) = 0) then
+                    report "writing to img buffer " & integer'image(x_tmp_tmp) & "    " & integer'image(y_tmp_tmp) & "    " & to_string(get_palette_color(get_pixel_bb_rom(x_tmp_tmp, y_tmp_tmp))) & "    " &to_string(get_pixel_bb_rom(x_tmp_tmp, y_tmp_tmp)) & "   to   " & integer'image(gp_x_tmp) & "    " & integer'image(gp_y_tmp);
+                  end if;
+
+                                        --report "test: " & to_string(get_palette_color(get_pixel_bb_rom(x_tmp, y_tmp)));
+                  img.set_pixel(gp_x_tmp, gp_y_tmp, get_palette_color(get_pixel_bb_rom(x_tmp_tmp, y_tmp_tmp)));
+                  gp_y_tmp := gp_y_tmp + 1;
+                end loop;
+                gp_y_tmp := to_integer(signed(gp_y));
+                gp_x_tmp := gp_x_tmp + 1;
+              end loop;
+
+                                        -- advance pointers
+              if mov_x = '1' then
+                gp_x <= std_logic_vector(my_width+signed(gp_x));
+              end if;
+              if mov_y = '1' then
+                gp_y <= std_logic_vector(my_height+signed(gp_y));
+              end if;
+
+
+
+              read_opcode <= true;
+              state       := 0;
+
+            when others =>
+              report "cant happen compact bit blit";
+          end case;
+
+        when OPCODE_LOAD_PALETTE =>
+          state := state + 1;           --inits to 1
+          case state is
+            when 1 =>
+              counter          := 0;
+              selected_palette <= gfx_instr(4 downto 0);
+            when others =>
+              if counter <= 15 then
+                palette(to_integer(unsigned(selected_palette)) * 16 + counter) <= gfx_instr;
+                counter                                                        := counter + 1;
+              else
+                                        --exit
+                counter     := 0;
+                read_opcode <= true;
+                state       := 0;
+
+              end if;
+          end case;
+
+        when OPCODE_BIT_BLIT =>
+          state := state + 1;
+          case state is
+            when 1 =>
+              alpha := gfx_instr(ALPHA_MODE_FLAG_INDEX);
+              mov_x := gfx_instr(MOVX_INDEX);
+              mov_y := gfx_instr(MOVY_INDEX);
+              hflip := gfx_instr(HFLIP_INDEX);
+              vflip := gfx_instr(VFLIP_INDEX);
+
+            when 2 =>
+              x := to_integer(unsigned(gfx_instr(15 downto 0)));
+              report "red x as " & to_string(x);
+            when 3 =>
+              y := to_integer(unsigned(gfx_instr(15 downto 0)));
+            when 4 =>
+              my_width := to_integer(unsigned(gfx_instr(15 downto 0)));
+            when 5 =>
+              my_height := to_integer(unsigned(gfx_instr(15 downto 0)));
+                                        --actually print stuff to image buffer
+                                        -- ignoring h and vflip so far
+              gp_y_tmp  := to_integer(signed(gp_y));
+              gp_x_tmp  := to_integer(signed(gp_x));
+
+              --report "read compact bit blit: " & integer'image(gp_x_tmp) & "    " & integer'image(gp_y_tmp);
+
+
+
+                                        --report "entering loops x and x+my_width: " & integer'image(x) & "    " & integer'image(x+my_width);
+              for x_tmp in x*3*4 to x*3*4+my_width loop
+                for y_tmp in y*3*4 to y*3*4+my_height loop
+                                        -- hflip and vflip working
+                  if (hflip = '1') then
+                    x_tmp_tmp := x*3*4+my_width-x_tmp+x*3*4;
+                  else
+                    x_tmp_tmp := x_tmp;
+                  end if;
+
+                  if (vflip = '1') then
+                    y_tmp_tmp := y*3*4+my_width-y_tmp;
+                  else
+                    y_tmp_tmp := y_tmp;
+                  end if;
+
+
+                                        --report "setting pixel: " & integer'image(gp_x_tmp) & "    " & integer'image(gp_y_tmp) & "    "; --& integer'image(get_palette_color(get_pixel_bb_rom(x, y)));
+                  --if (to_integer(unsigned((get_pixel_bb_rom(x_tmp_tmp, y_tmp_tmp)))) = 0) then
+                  --report "writing to img buffer " & integer'image(x_tmp_tmp) & "    " & integer'image(y_tmp_tmp) & "    " & to_string(get_palette_color(get_pixel_bb_rom(x_tmp_tmp, y_tmp_tmp))) & "    " &to_string(get_pixel_bb_rom(x_tmp_tmp, y_tmp_tmp)) & "   to   " & integer'image(gp_x_tmp) & "    " & integer'image(gp_y_tmp);
+                  --end if;
+
+                                        --report "test: " & to_string(get_palette_color(get_pixel_bb_rom(x_tmp, y_tmp)));
+                  img.set_pixel(gp_x_tmp, gp_y_tmp, get_palette_color(get_pixel_bb_rom(x_tmp_tmp, y_tmp_tmp)));
+                  gp_y_tmp := gp_y_tmp + 1;
+                end loop;
+                gp_y_tmp := to_integer(signed(gp_y));
+                gp_x_tmp := gp_x_tmp + 1;
+              end loop;
+
+                                        -- advance pointers
+              if mov_x = '1' then
+                gp_x <= std_logic_vector(to_signed(to_integer(signed(gp_x)) + 1, 16));
+              end if;
+              if mov_y = '1' then
+                gp_y <= std_logic_vector(to_signed(to_integer(signed(gp_y)) + 1, 16));
+              end if;
+
+
+
+              read_opcode <= true;
+              state       := 0;
+
+
+            when others =>
+              report "cant happen compact bit blit";
+              read_opcode <= true;
+          end case;
+			 
+		when OPCODE_INC_GP_X =>
+          gp_x <= std_logic_vector(to_signed(to_integer(signed(gp_x)) + to_integer(signed(gfx_instr(11 downto 0))), 16));
+          read_opcode <= true;
+			 
+			when OPCODE_INC_GP_Y =>
+          gp_y <= std_logic_vector(to_signed(to_integer(signed(gp_y)) + to_integer(signed(gfx_instr(11 downto 0))), 16));
+          read_opcode <= true;
+
+        when OPCODE_SET_PIXEL =>
+          img.set_pixel(to_integer(signed(gp_x)), to_integer(signed(gp_y)), get_palette_color(gfx_instr(11 downto 8)));
+          --std_logic_vector(to_signed(to_integer(signed(gp_y)) + to_integer(signed(gfx_instr)), 16));
+          if (gfx_instr(3) = '1') then
+            gp_x <= std_logic_vector(to_signed(to_integer(signed(gp_x)) + 1, 16));
+          end if;
+          if (gfx_instr(2) = '1') then
+            gp_y <= std_logic_vector(to_signed(to_integer(signed(gp_y)) + 1, 16));
+          end if;
+          read_opcode <= true;
+
+
+        when OPCODE_CLEAR =>
+          for y_tmp in 0 to 239 loop
+            for x_tmp in 0 to 319 loop
+              img.set_pixel(x_tmp, y_tmp, get_palette_color(gfx_instr(11 downto 8)));
+            end loop;
+          end loop;
+          read_opcode <= true;
+			 
+			when OPCODE_FRAME_SYNC =>
+          if gfx_frame_sync = '1' then
+				read_opcode <= true;
+			end if;
+
+        when others =>
+          report "cant happen instruction, opcode: " & to_string(opcode);
+      end case;
+    end if;
+  --end if;
+  --end loop;
+  --wait;
+  end process;
+
+  dumpFrame : process
+    variable file_name        : string(1 to 13);  --idk about size
+    variable file_cnt         : integer         := 0;
+    variable my_line          : line;
+    variable color_tmp        : std_logic_vector(15 downto 0);
+    variable my_string        : string(1 to 14) := "P3 320 240 16 ";
+    variable x_tmp_2, y_tmp_2 : integer;
+  begin
+    while true loop
+      wait until dump_frame = '1';
+      file_name := OUTPUT_DIR & "frame_" & integer'image(file_cnt) & ".ppm";
+      report "file getting dumped to " & file_name;
+
+      file_open(file_out_id, file_name, write_mode);
+
+      write(my_line, string'(my_string));  --viewing info
+      writeline(file_out_id, my_line);
+
+      for y_tmp_2 in 0 to 239 loop
+        for x_tmp_2 in 0 to 319 loop
+          color_tmp := img.get_pixel(x_tmp_2, y_tmp_2);
+
+          write(my_line, string(" " & to_string(to_integer(unsigned(color_tmp(4 downto 0))))) & string(" " & to_string(to_integer(unsigned(color_tmp(10 downto 5))))) & string(" " & to_string(to_integer(unsigned(color_tmp(4 downto 0))))));
+
+
+        end loop;
+        writeline(file_out_id, my_line);
+
+      end loop;
+      file_cnt := file_cnt + 1;
+      file_close(file_out_id);
+    end loop;
+
+
+    wait;
+
+  end process;
+end architecture;

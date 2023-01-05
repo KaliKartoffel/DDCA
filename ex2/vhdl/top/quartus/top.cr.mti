@@ -1,0 +1,386 @@
+/homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/ram/src/fifo_1c1r1w_fwft.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/ram/src/fifo_1c1r1w_fwft.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package math_pkg
+-- Loading package ram_pkg
+-- Compiling entity fifo_1c1r1w_fwft
+-- Compiling architecture arch of fifo_1c1r1w_fwft
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/frame_reader.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/frame_reader.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package math_pkg
+-- Loading package ram_pkg
+-- Compiling entity frame_reader
+-- Compiling architecture arch of frame_reader
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_util/src/tetris_util_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_util/src/tetris_util_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package math_pkg
+-- Loading package vga_gfx_cntrl_pkg
+-- Compiling package tetris_util_pkg
+-- Compiling package body tetris_util_pkg
+-- Loading package tetris_util_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/ram/src/ram_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/ram/src/ram_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package math_pkg
+-- Compiling package ram_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/sram_cntrl/src/sram_cntrl.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/sram_cntrl/src/sram_cntrl.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package math_pkg
+-- Loading package ram_pkg
+-- Compiling entity sram_cntrl
+-- Compiling architecture arch of sram_cntrl
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/ram/src/fifo_1c1r1w.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/ram/src/fifo_1c1r1w.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package math_pkg
+-- Loading package ram_pkg
+-- Compiling entity fifo_1c1r1w
+-- Compiling architecture arch of fifo_1c1r1w
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/sram_cntrl/src/sram_cntrl_pkg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/sram_cntrl/src/sram_cntrl_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package sram_cntrl_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/synchronizer/src/sync.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/synchronizer/src/sync.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity sync
+-- Compiling architecture beh of sync
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/decimal_printer/src/decimal_printer.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/decimal_printer/src/decimal_printer.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package vga_gfx_cntrl_pkg
+-- Loading package math_pkg
+-- Compiling entity decimal_printer
+-- Compiling architecture arch of decimal_printer
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/audio_cntrl/src/audio_cntrl_2s.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/audio_cntrl/src/audio_cntrl_2s.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package audio_cntrl_pkg
+-- Compiling entity audio_cntrl_2s
+-- Compiling architecture arch of audio_cntrl_2s
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/synchronizer/src/sync_pkg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/synchronizer/src/sync_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package sync_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gfx_util/src/gfx_util_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gfx_util/src/gfx_util_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package gfx_util_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/decimal_printer/src/decimal_printer_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/decimal_printer/src/decimal_printer_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package vga_gfx_cntrl_pkg
+-- Compiling package decimal_printer_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/audio_cntrl/src/audio_cntrl_top.vho {1 {vcom -work work -2002 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/audio_cntrl/src/audio_cntrl_top.vho
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package VITAL_Primitives
+-- Loading package cycloneive_atom_pack
+-- Loading package cycloneive_components
+-- Compiling entity hard_block
+-- Compiling architecture structure of hard_block
+-- Loading package dffeas_pack
+-- Loading package altera_primitives_components
+-- Compiling entity audio_cntrl_top
+-- Compiling architecture structure of audio_cntrl_top
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gc_cntrl/src/gc_cntrl_top.vho {1 {vcom -work work -2002 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gc_cntrl/src/gc_cntrl_top.vho
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package VITAL_Primitives
+-- Loading package cycloneive_atom_pack
+-- Loading package cycloneive_components
+-- Compiling entity hard_block
+-- Compiling architecture structure of hard_block
+-- Loading package dffeas_pack
+-- Loading package altera_primitives_components
+-- Compiling entity gc_cntrl_top
+-- Compiling architecture structure of gc_cntrl_top
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/math/src/math_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/math/src/math_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Compiling package math_pkg
+-- Compiling package body math_pkg
+-- Loading package math_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/bb_rom_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/bb_rom_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package gfx_util_pkg
+-- Compiling package bb_rom_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/top/src/top.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/top/src/top.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package sync_pkg
+-- Loading package NUMERIC_STD
+-- Loading package audio_cntrl_pkg
+-- Loading package gc_cntrl_pkg
+-- Loading package vga_gfx_cntrl_pkg
+-- Compiling entity top
+-- Compiling architecture arch of top
+-- Loading package math_pkg
+-- Loading package ram_pkg
+-- Loading package tetris_util_pkg
+-- Loading entity tetris_game
+-- Loading package dbg_port_pkg
+-- Loading entity dbg_port
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/tpg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/tpg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tpg
+-- Compiling architecture arch of tpg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/dbg_port/src/dbg_port_top.vho {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/dbg_port/src/dbg_port_top.vho
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package VITAL_Primitives
+-- Loading package cycloneive_atom_pack
+-- Loading package cycloneive_components
+-- Compiling entity hard_block
+-- Compiling architecture structure of hard_block
+-- Loading package dffeas_pack
+-- Loading package altera_primitives_components
+-- Compiling entity dbg_port_top
+-- Compiling architecture structure of dbg_port_top
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_game/src/tetris_game.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_game/src/tetris_game.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package vga_gfx_cntrl_pkg
+-- Loading package math_pkg
+-- Loading package gc_cntrl_pkg
+-- Loading package audio_cntrl_pkg
+-- Loading package ram_pkg
+-- Loading package tetris_util_pkg
+-- Compiling entity tetris_game
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gc_cntrl/src/gc_cntrl_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gc_cntrl/src/gc_cntrl_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package gc_cntrl_pkg
+-- Compiling package body gc_cntrl_pkg
+-- Loading package gc_cntrl_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_game/src/tetris_game_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_game/src/tetris_game_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package vga_gfx_cntrl_pkg
+-- Loading package gc_cntrl_pkg
+-- Loading package audio_cntrl_pkg
+-- Compiling package tetris_game_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/vga_gfx_cntrl_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/vga_gfx_cntrl_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package vga_gfx_cntrl_pkg
+-- Compiling package body vga_gfx_cntrl_pkg
+-- Loading package vga_gfx_cntrl_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/audio_cntrl/src/audio_cntrl_pkg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/audio_cntrl/src/audio_cntrl_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package audio_cntrl_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/ram/src/dp_ram_1c1r1w.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/ram/src/dp_ram_1c1r1w.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity dp_ram_1c1r1w
+-- Compiling architecture beh of dp_ram_1c1r1w
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gfx_util/src/gfx_bb.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gfx_util/src/gfx_bb.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package math_pkg
+-- Loading package gfx_util_pkg
+-- Compiling entity gfx_bb
+-- Compiling architecture arch of gfx_bb
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/dbg_port/src/dbg_port.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/dbg_port/src/dbg_port.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package dbg_port_pkg
+-- Compiling entity dbg_port
+-- Compiling architecture arch of dbg_port
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/dbg_port/src/dbg_port_pkg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/dbg_port/src/dbg_port_pkg.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package dbg_port_pkg
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gc_cntrl/src/precompiled_gc_cntrl.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gc_cntrl/src/precompiled_gc_cntrl.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package gc_cntrl_pkg
+-- Compiling entity precompiled_gc_cntrl
+-- Compiling architecture rtl of precompiled_gc_cntrl
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_util/src/tetromino_drawer.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_util/src/tetromino_drawer.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package math_pkg
+-- Loading package vga_gfx_cntrl_pkg
+-- Loading package tetris_util_pkg
+-- Compiling entity tetromino_drawer
+-- Compiling architecture arch of tetromino_drawer
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_game/src/tetris_game_ex1.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_game/src/tetris_game_ex1.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package vga_gfx_cntrl_pkg
+-- Loading package math_pkg
+-- Loading package gc_cntrl_pkg
+-- Loading package audio_cntrl_pkg
+-- Loading package ram_pkg
+-- Loading package tetris_util_pkg
+-- Loading package decimal_printer_pkg
+-- Compiling architecture ex1 of tetris_game
+-- Loading entity tetris_game
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_util/src/tetromino_collider.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/tetris_util/src/tetromino_collider.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package math_pkg
+-- Loading package vga_gfx_cntrl_pkg
+-- Loading package tetris_util_pkg
+-- Compiling entity tetromino_collider
+-- Compiling architecture arch of tetromino_collider
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gfx_util/src/gfx_line.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/gfx_util/src/gfx_line.vhd
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package math_pkg
+-- Compiling entity gfx_line
+-- Compiling architecture arch of gfx_line
+
+} {} {}} /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/precompiled_vga_gfx_cntrl.vho {1 {vcom -work work -2002 -explicit -vopt -stats=none /homes/d11825350/Downloads/ddca_ss2022-master/dd/vhdl/vga_gfx_cntrl/src/precompiled_vga_gfx_cntrl.vho
+QuestaSim vcom 10.6c_1 Compiler 2017.09 Sep 15 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package VITAL_Primitives
+-- Loading package cycloneive_atom_pack
+-- Loading package cycloneive_components
+-- Compiling entity hard_block
+-- Compiling architecture structure of hard_block
+-- Loading package dffeas_pack
+-- Loading package altera_primitives_components
+-- Compiling entity precompiled_vga_gfx_cntrl
+-- Compiling architecture structure of precompiled_vga_gfx_cntrl
+
+} {} {}}
